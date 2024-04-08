@@ -1,0 +1,28 @@
+.nav-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+    .nav-item {
+        @include vertical-align;
+        gap: 8px;
+        white-space: nowrap;
+
+        .item-link {
+            color: var(--text-color);
+            padding: 0
+        }
+    }
+
+    .user {
+        @include vertical-align;
+        gap: 20px;
+
+        .user-info {
+            @include vertical-align;
+            gap: 8px;
+        }
+    }
+}

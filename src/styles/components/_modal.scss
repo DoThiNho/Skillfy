@@ -1,0 +1,23 @@
+.modal {
+    padding-right: 0;
+    .modal-dialog {
+        height: 100%;
+        float: right;
+        min-width: $min-width-nav-mobile;
+        margin: 0;
+    
+        .modal-content {
+            height: 100%;
+            border: none;
+            border-radius: unset;
+        }
+    
+        .nav-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            margin-bottom: 32px;
+            cursor: pointer;
+        }
+    }
+}

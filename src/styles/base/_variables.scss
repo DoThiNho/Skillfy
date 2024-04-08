@@ -1,0 +1,42 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --main-color:#efeff7;
+    --text-color: #6e688d;
+    --name-color: #92929A;
+    --text-footer: #7a7b83;
+    --divider-footer: #7a7b83;
+    --icon-play-video: #e66563;
+    --icon-direction: #e4821d;
+
+    --main-bg: #efeff7;
+    --bg-btn: #e66462;
+    --bg-section-text: #fbefef;
+    --bg-checkbox: #72d2bf;
+    --bg-progress: #ed9434;
+    --bg-shape: #f5ecef;
+    --bg-footer: #282834;
+    --bg-box-green: #64b17b;
+    --bg-box-purple: #5b557e;
+    --bg-box-orange: #e88520;
+    --bg-box-yellow: #f3b761;
+    --bg-box-red: #e66460;
+    --bg-box-grey: #8d8d98;
+    --bg-box-brown: #b3a092;
+    --bg-box-blue: #64929f;
+    --bg-box-pink: #e05262;
+
+}
+
+// Width
+$min-width-slider-card: 350px;
+$min-width-nav-mobile: 375px;
+$min-width-blog-img: 500px;
+
+// height
+$box-blog-height: 230px;
+
+// Breakpoint
+$mobile: 576px;
+$tablet: 768px;
+$desktop: 992px;

@@ -1,0 +1,47 @@
+.slider-wrapper {
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        overflow-x: auto;
+        gap: 24px;
+        scrollbar-width: none;
+        margin-top: 32px;
+
+        .card {
+            box-shadow: none;
+            border: none;
+            min-width: $min-width-slider-card;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .btn-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+
+        .btn-direction {
+            background-color: var(--white);
+            color: var(--icon-direction);
+        }
+
+        .progress {
+            position: relative;
+            width: 100%;
+            margin: 0 8px;
+            height: 5px;
+            &__bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30%;
+                height: 100%;
+                background-color: var(--bg-progress);
+            }
+        }
+    }
+}

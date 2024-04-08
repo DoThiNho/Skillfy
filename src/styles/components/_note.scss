@@ -1,0 +1,41 @@
+.note {
+    padding-top: 0;
+    
+    .note-content {
+        background-color: var(--bg-section-text);
+        padding: 64px;
+
+        .note-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            gap: 16px;
+    
+            .note-text {
+                font-size: 32px;
+                line-height: 1.5;
+                font-style: italic;
+            }
+
+            .note-name {
+                margin-bottom: 16px;
+            }
+        }
+    
+        .note-img {
+            position: relative;
+            .note-icon {
+                position: absolute;
+                bottom: 16px;
+                right: 16px;
+                padding: 18px 24px;
+                background-color: var(--white);
+                border-radius: 50%;
+                font-size: 18px;
+                color: var(--icon-play-video);
+                cursor: pointer;
+            }
+        }
+    }
+}

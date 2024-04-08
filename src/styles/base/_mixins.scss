@@ -1,0 +1,20 @@
+@mixin align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+@mixin section-header-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+@mixin section-title {
+    font-size: 24px;
+    font-weight: bold;
+}

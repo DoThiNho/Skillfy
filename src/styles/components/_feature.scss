@@ -1,0 +1,49 @@
+.feature {
+    background-color: var(--main-bg);
+
+    .feature-header {
+        .feature-title {
+            @include section-header-title;
+        }
+
+        .feature-view {
+            display: flex;
+            justify-content: end;
+            gap: 16px;
+
+            .feature-category {
+                color: var(--text-color);
+                padding: 0 16px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+            }
+    
+            .btn-view-all {
+                padding: 12px 20px;
+                &:hover {
+                    background-color: var(--bg-btn);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+
+    .courses {
+        margin-top: 16px;
+    }
+
+    @media (max-width: $tablet){
+        .feature-header {
+
+            .feature-title {
+                text-align: center;
+            }
+
+            .feature-view {
+                justify-content: center;
+                margin-top: 16px;
+            }
+        }
+    }
+}

@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import LayoutAbout from "components/layout/LayoutAbout";
+import LayoutFeatures from "components/layout/LayoutFeatures";
+import LayoutHeader from "components/layout/LayoutHeader";
+import LayoutSearchBar from "components/layout/LayoutSearchBar";
+import CourseList from "components/course/CourseList";
+import BlogList from "components/blog/BlogList";
+import LayoutNote from "components/layout/LayoutNote";
+import LayoutDeal from "components/layout/LayoutDeal";
+import LayoutFooter from "components/layout/LayoutFooter";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+        <LayoutHeader/>
+        <main>
+            <LayoutSearchBar/>
+            <CourseList/>
+            <LayoutAbout/>
+            <LayoutFeatures/>
+            <BlogList/>
+            <LayoutNote/>
+            <LayoutDeal/>
+        </main>
+        <LayoutFooter/>
+        
     </div>
   );
 }
